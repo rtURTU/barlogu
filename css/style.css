@@ -1,0 +1,39 @@
+#wrapper{
+    width: 100%;
+    
+}
+
+.col-centered{
+    display: block;
+    margin: 0 auto;
+}
+
+.even-color{
+    background-color: #47CCBD;
+}
+
+.odd-color{
+    background-color: #19AFD1;
+}
+
+.title-color{
+    background-color: #BABABA;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.table-row{
+    height: 50px;
+}
+
+.table-content{
+    vertical-align: middle;
+    display: block;
+    margin: 0 auto;
+}
+
+.table-cell{
+    text-align: center;
+    display: block;
+    height: 100%;
+}
