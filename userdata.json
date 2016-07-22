@@ -1,0 +1,11 @@
+{
+	"Users":
+	[
+		{ "Name" : "Turtu" , "InfoarenaUsername" : "DysKode" , "CodeforcesUsername" : "DysKode" , "PbinfoUsername" : "DysKode" },
+		{ "Name" : "Tudor" , "InfoarenaUsername" : "Lolkekzor" , "CodeforcesUsername" : "Lolkekzor" , "PbinfoUsername" : "Lolkekzor" },
+		{ "Name" : "Turdean" , "InfoarenaUsername" : "Alexmisto342" , "CodeforcesUsername" : "Alex342" , "PbinfoUsername" : "alex342" },
+		{ "Name" : "Tosa" , "InfoarenaUsername" : "andytosa" , "CodeforcesUsername" : "andytosa" , "PbinfoUsername" : "andytosa" },
+		{ "Name" : "Flavius" , "InfoarenaUsername" : "vlasiuflavius" , "CodeforcesUsername" : "flavius" , "PbinfoUsername" : "vlasiuflavius" },
+		{ "Name" : "Victor" , "InfoarenaUsername" : "victor24" , "CodeforcesUsername" : "victor24" , "PbinfoUsername" : "Victor24" }
+	]
+}

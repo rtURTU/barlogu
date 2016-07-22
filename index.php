@@ -17,21 +17,21 @@
                         <p class = "table-content">Username</p>
                     </div>
                     <div class = "col-xs-2 table-cell">
-                        <p class = "table-content">Infoarena</p>
+                        <a onclick = "sortBy(0)" class = "table-content">Infoarena</a>
                     </div>
                     <div class = "col-xs-2 table-cell">
-                        <p class = "table-content">Codeforces</p>
+                        <a onclick = "sortBy(1)" class = "table-content">Codeforces</a>
                     </div>
                     <div class = "col-xs-2 table-cell">
-                        <p class = "table-content">PbInfo</p>
+                        <a onclick = "sortBy(2)" class = "table-content">PbInfo</a>
                     </div>
                     <div class = "col-xs-2 table-cell">
-                        <p class = "table-content">Total</p>
+                        <a onclick = "sortBy(3)" class = "table-content">Total</a>
                     </div>
                 </div>
             </div>
             
-            <div id = "user-prefab" style = "display:none;" class = "row table-row even-color">
+            <div id = "user-prefab" style = "display:none;" class = "row table-row even-color user">
                 <div class = "col-xs-4 table-cell">
                         <p id = "name" class = "table-content"></p>
                     </div>
