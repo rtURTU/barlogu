@@ -1,0 +1,15 @@
+.back1 {
+	background-image: url("../media/back.png");
+}
+
+.backred {
+	background-color: #F26C63;
+}
+
+.grad {
+/*  background: #F26C63; 
+  background: -webkit-radial-gradient(#405663, #F26C63); 
+  background: -o-radial-gradient(#405663, #F26C63); 
+  background: -moz-radial-gradient(#405663, #F26C63); 
+  background: radial-gradient(#405663, #F26C63); */
+}
