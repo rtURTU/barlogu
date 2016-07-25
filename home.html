@@ -13,9 +13,9 @@
 
 </head>
 
-<body>
+<body style=" background-color:#405663;  max-width:100%;  overflow-x: hidden;">
 
-<div class="back1"> 
+<div class="back1" >  
 
 	<nav class="navbar navbar-default" style="margin-bottom: 0; background-color: white;">
 		<div class="container-fluid">
@@ -67,20 +67,20 @@
 			</div>
 		</div>
 	</nav>
-
- <div style="margin-left:10%; margin-right:10%; padding-left:5%; padding-right:5%; background-color:#405663;" class="main">
+ <div style="background-color:#405663;" class="main">
 
 	<div class="row">
-           
-		<div id="holder" class="fixedbigdiv"> <div class="row placeholders">
+		<div id="holder" class="fixedbigdiv col-sm-12"> <div class="row placeholders">
 			
-			<p><font color="#405663">filthy hack</font><p>
-			<p><font color="#405663">filthy hack</font><p>
+	 		<canvas id="background1" class="col-sm-2" height="1400px" width="400px" style="padding-top: 0"></canvas>  
+ 			<canvas id="background2" class="col-sm-2" height="1400px" width="400px" style="float: right"></canvas>  
 
+			<p><font color="#405663">filthy hack</font><p>
+			<p><font color="#405663">filthy hack</font><p>
 
 			<a href="#aboutContent" class="scroller"
 			   style="text-decoration: none; color: black;"> <div class="scroller" algin="center">
-				<div class="col-xs-6 col-sm-4 placeholder" align="center">
+				<div class="col-sm-2 placeholder" align="center">
 					<image id="about" src="media/bear.png"
 						width="200" height="200" 
 						class="expandable img-circle" 
@@ -90,9 +90,9 @@
 				</div>
 			</div> </a>   <!-- Modify scroller speed -->
 			
-			<a href="index.php?Videos=true"
+			<a href="#articleContent"  class="scroller"
 			   style="text-decoration: none; color: black;"> <div class="scroller" algin="center">
-				<div class="col-xs-6 col-sm-4 placeholder" align="center">
+				<div class="col-sm-4 placeholder" align="center">
 					<image id="standings" src="media/home.png"
 						width="150" height="150" 
 						class="expandable img-circle" 
@@ -102,9 +102,9 @@
 				</div>
 			</div> </a>
 
-			<a href="index.php?Algorithms=true"
+			<a href="#problemContent"  class="scroller"
 			   style="text-decoration: none; color: black;"><div class="scroller">
-				<div class="col-xs-6 col-sm-4 placeholder" align="center">
+				<div class="col-sm-2 placeholder" align="center">
 					<div class="canvas-holder">
 						<canvas id="textMove"
 							width="200" height="200" 
@@ -117,7 +117,6 @@
 					<h4><b><font color="white">Probleme</font></b></h4>
 				</div>
 			</div> </a>
-
 
 			<!-- <p><font color="#405663">filthy hack</font><p> -->
 
@@ -181,34 +180,121 @@
 
 
 <div class="back1"> 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-</div>
 
+	<div class="row"s class="scroller">
+		<div id="holder" class="fixedbigdiv col-sm-12"> <div class="row placeholders">
+			
+	 		<canvas id="background3" class="col-sm-2" height="1400px" width="400px" style="padding-top: 0"></canvas>  
+ 			<canvas id="background4" class="col-sm-2" height="1400px" width="400px" style="float: right"></canvas>  
+
+			<p><font color="#405663">&nbsp;</font><p>
+			<p><font color="#405663">&nbsp;</font><p>
+			<p><font color="#405663">&nbsp;</font><p>
+
+			<p><font color="white"><font size="6"><center>Probleme din siteuri externe integrate cu problemele interne.</center></font><p>
+
+			<div id="problemContent" name="problemContent"></div>
+
+			<!-- <p><font color="#405663">filthy hack</font><p> -->
+
+			<p><font color="#405663">&nbsp;</font><p>
+			<p><font color="#405663">&nbsp;</font><p>
+
+
+			<a href="" class="scroller"
+			   style="text-decoration: none; color: black;"> <div class="scroller" algin="center">
+				<div class="col-sm-4 placeholder" align="center">
+					<image id="about" src="media/logo1.png"
+						width="200" height="150" 
+						class="expandable img-circle" 
+						alt="Generic placeholder thumbnail">
+					</image>
+					<h4><b><font color="white">Topcoder</font></b></h4>
+				</div>
+			</div> </a>   <!-- Modify scroller speed -->
+			
+			<a href=""  class="scroller"
+			   style="text-decoration: none; color: black;"> <div class="scroller" algin="center">
+				<div class="col-sm-4 placeholder" align="center">
+					<image id="standings" src="media/logo2.png" style="background-color: white;"
+						width="200" height="200" 
+						class="expandable img-circle" 
+						alt="Generic placeholder thumbnail">
+					</image>
+					<h4><b><font color="white">Codeforces</font></b></h4>
+				</div>
+			</div> </a>
+
+			<p><font color="#405663">&nbsp;</font><p>
+			<p><font color="#405663">&nbsp;</font><p>
+
+			<a href="" class="scroller"
+			   style="text-decoration: none; color: black;"> <div class="scroller" algin="center">
+				<div class="col-sm-4 placeholder" align="center">
+					<image id="about" src="media/logo3.jpeg"
+						width="200" height="200" 
+						class="expandable img-circle" 
+						alt="Generic placeholder thumbnail">
+					</image>
+					<h4><b><font color="white">Infoarena</font></b></h4>
+				</div>
+			</div> </a>   <!-- Modify scroller speed -->
+			
+			<a href=""  class="scroller"
+			   style="text-decoration: none; color: black;"> <div class="scroller" algin="center">
+				<div class="col-sm-4 placeholder" align="center">
+					<image id="standings" src="media/pbinfo.png" style="background-color: white;"
+						width="200" height="200" 
+						class="expandable img-circle" 
+						alt="Generic placeholder thumbnail">
+					</image>
+					<h4><b><font color="white">Pbinfo</font></b></h4>
+				</div>
+			</div> </a>
+
+		</div> </div>
+	</div>
+ </div></div>
+
+
+			<p><font color="#405663">&nbsp;</font><p>
+			<p><font color="#405663">&nbsp;</font><p>
+			<p><font color="#405663">&nbsp;</font><p>
+			<p><font color="#405663">&nbsp;</font><p>
+			
+<section >
+		<div name="aboutContent" id="aboutContent" class="col-sm-12"
+		style="margin-left:0%; margin-right:0%; padding-left:0%; padding-right:0%; background-color: white;">
+			<div class="col-xs-8 col-sm-8 placeholder">
+			
+			<p><font color="#405663">&nbsp;</font><p>
+			<p><font color="#405663">&nbsp;</font><p>
+
+			<div id="articleContent" name="articleContent"></div>
+
+				<div style="margin-left:10%; margin-right:10%; padding-left:5%; padding-right:5%; background-color:white;">
+				<p><font size="6" color="black"><center> Suport pentru: </center></font></p>
+				<hr length="full">
+				<p><b><font size="4" color="black"><center>  - articole <font color="#F26C63">interne si externe</font></center></font></b></p>
+				<p><b><font size="4" color="black"><center>  - sistem intern de rating </center></font></b></p>
+				<p><b><font size="4" color="black"><center>  - grupuri de antrenament</center></font></b></p>
+				<p><b><font size="4" color="black"><center>  - concursuri  <font color="#F26C63">virtuale </font></center></font></b></p>
+				</div>
+			</div>
+			<div class="col-sm-4 placeholder backred" style="padding-right:0%;">
+			
+			<p><font color="#405663">&nbsp;</font><p>
+			<p><font color="#405663">&nbsp;</font><p>
+
+				<center><img style="max-width: 250px;" src="media/icon3.png"></center>
+			
+			<p><font color="#405663">&nbsp;</font><p>
+			<p><font color="#405663">&nbsp;</font><p>
+				
+			</div>
+		</div>
+	</div>
+</section>
 
 	<script src="js/home.js"></script>
 	<script src="js/scroll.js"></script> 

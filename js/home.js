@@ -108,3 +108,58 @@ $(function(){
 		$(this).attr('src', 'media/home.png');
 	});
 });
+
+var drops = (function() {
+	function seed(start) {
+		return {
+			"x" : start,
+			"y" : Math.random() * 1200
+		};
+	}
+
+	function move_x(ctx, pos, start) {
+		ctx.moveTo(pos.x, pos.y);
+		pos = {
+			"x" : pos.x + Math.random() * 100 * (start > 0 ? -1 : 1),
+			"y" : pos.y 
+		}
+		ctx.lineTo(pos.x, pos.y);
+		return pos;
+	}
+
+	function move_y(ctx, pos) { 
+		ctx.moveTo(pos.x, pos.y);
+		var dir = Math.random()
+		pos = {
+			"x" : pos.x,
+			"y" : pos.y + Math.random() * 100 * (dir > 0.5 ? 1 : -1)
+		};
+		ctx.lineTo(pos.x, pos.y);
+		return pos;
+	}
+
+	function make_lines(where, start) {
+		var c = document.getElementById(where);
+		var ctx = c.getContext("2d");
+
+		ctx.beginPath();
+		var pos = seed(start);
+		var steps = 3;
+		while (steps > 0) {
+			pos = move_x(ctx, pos, start);
+			pos = move_y(ctx, pos);
+			steps--;
+		}
+		ctx.lineWidth = 0.2;
+      	ctx.strokeStyle = '#ffffff';
+		ctx.stroke();
+	}
+	var x = 100;
+	while (x > 0) {
+		make_lines("background1", 0);
+		make_lines("background2", 400);
+		make_lines("background3", 0);
+		make_lines("background4", 400);
+		x--;
+	}
+})(); 
