@@ -122,7 +122,7 @@ function displayList(){
     }
 }
 
-window.onload = function(){
+function MakeStandings(){
     loadUsers( "userdata.json" );
     screenNode = document.getElementById( "screen" );
     userList = document.getElementById( "user-list" );
