@@ -1,0 +1,31 @@
+.color-blue {
+    background-color: blue;
+}
+.color-red {
+    background-color: red;
+}
+.color-green {
+    background-color: green;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.float-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.fit-div {
+    max-width: 100%;
+}
+.text-center {
+    text-align: center;
+}
+.article-image-div {
+    margin-left: 30p;
+    margin-right: 30p;
+    margin-top: 50p;
+    margin-bottom: 30p;
+}
