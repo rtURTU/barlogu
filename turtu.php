@@ -15,7 +15,7 @@
     
     <div id = "wrapper" style="width:40%;">
     </div>
-    <script>MakeCalendar( "wrapper" )</script>
+    <script>MakeCalendar( "wrapper" , 2016 , 6 )</script>
 
     
 </body>
