@@ -1,15 +1,41 @@
-/*.back1 {
+.back1 {
 	background-image: url("../media/back.png");
-}*/
+}
+
+body {
+	background-color:#405663;  
+	max-width:100%; 
+	overflow-x: hidden;
+}
+
+.padded {
+	margin-left:10%; 
+	margin-right:10%; 
+	padding-left:5%; 
+	padding-right:5%; 
+	background-color:white;
+}
+
+#aboutContent, .free {
+	margin-left:0%; 
+	margin-right:0%; 
+	padding-left:0%; 
+	padding-right:0%; 
+	background-color: white;
+}
+
+.main {
+	background-color:#405663;
+}
 
 .backred {
 	background-color: #F26C63;
 }
 
 .grad {
-/*  background: #F26C63; 
+  background: #F26C63; 
   background: -webkit-radial-gradient(#405663, #F26C63); 
   background: -o-radial-gradient(#405663, #F26C63); 
   background: -moz-radial-gradient(#405663, #F26C63); 
-  background: radial-gradient(#405663, #F26C63); */
+  background: radial-gradient(#405663, #F26C63); 
 }
