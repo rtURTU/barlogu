@@ -1,21 +1,23 @@
 <html>
     
 <head>
+    
+    <script src = "js/calendar.js"></script>
+    
 </head>
 
 <body>
 
-
-
+    
     <?php
-        function callFunction( $name ){
-            echo "<script>" . $name . "</script>";
-        }
         echo file_get_contents( "includes/header.html" );
-        //echo file_get_contents( "includes/standings.html" );
-       // callFunction( "MakeStandings()" );
-
     ?>
+    
+    <div id = "wrapper" style="width:40%;">
+    </div>
+    <script>MakeCalendar( "wrapper" )</script>
+
+    
 </body>
     
 </html>
