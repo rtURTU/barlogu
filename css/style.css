@@ -1,12 +1,13 @@
 #wrapper{
     width: 100%;
-    
 }
 
 .col-centered{
     display: block;
     margin: 0 auto;
 }
+
+/* Standings Styling */
 
 .even-color{
     background-color: #47CCBD;
@@ -58,4 +59,10 @@ a{
 
 .navbar-buttons{
     background-color: deepskyblue;
+}
+
+/* Calendar Styling */
+.calendar-tile{
+    width: 14.285%;
+    float: left;
 }
