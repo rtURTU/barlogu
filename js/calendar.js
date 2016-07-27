@@ -44,7 +44,7 @@ function MakeCalendar( divId , year , month ){
         tileText.innerHTML = firstDay.getDate();
         newTile.appendChild( tileText );
         calendarHeader.appendChild( newTile );
-        newTile.onclick = function(){ DisplayPopUp( year , month , tileText.innerHTML ); };
+        newTile.onclick = function(){ DisplayPopUp( year , month , this.getElementsByTagName( "a" )[ 0 ].innerHTML ); };
         ok++;
         firstDay.setDate( firstDay.getDate() + 1 );
     }
