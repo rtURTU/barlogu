@@ -29,3 +29,20 @@
     margin-top: 50p;
     margin-bottom: 30p;
 }
+.section-title {
+    height: 50p;
+    padding-bottom: 60;
+}
+.game-row {
+    padding-bottom: 60;
+}
+.game-box {
+    padding-left: 30;
+    padding-right: 30;
+}
+.game-image {
+    padding: 30;
+}
+.add-height {
+    height: 100;
+}
