@@ -19,7 +19,7 @@
             ?>
             <div class = "col-xs-12 float-left">
                 <?php
-                    echo file_get_contents ("Articol.php");
+                    echo file_get_contents ("includes/Articol.php");
                 ?>
             </div>
             
