@@ -10,14 +10,22 @@
     </head>
     
     <body>
-        <div class = "col-lg-6 color-blue">
-            <img src = "http://fullhdpictures.com/wp-content/uploads/2015/12/Blue-Eyes-Girl-Desktop.jpg" height = "400"/>
+        <div class = "col-xs-1 float-left color-blue add-height page-margin">
+        
         </div>
-        <div class = "col-lg-3 color-green">
-            <img src = "http://fullhdpictures.com/wp-content/uploads/2015/12/Blue-Eyes-Girl-Desktop.jpg" height = "200"/>
+        <div class = "col-xs-10 float-left main-content-div">
+            <?php 
+                echo file_get_contents ("includes/header.html");
+            ?>
+            <div class = "col-xs-12 float-left">
+                <?php
+                    echo file_get_contents ("includes/Articol.php");
+                ?>
+            </div>
+            
         </div>
-        <div class = "col-lg-3 color-red">
-            <img src = "http://fullhdpictures.com/wp-content/uploads/2015/12/Blue-Eyes-Girl-Desktop.jpg" height = "100"/>
+        <div class = "col-xs-1 float-left color-blue add-height page-margin">
+        
         </div>
     </body>
     
