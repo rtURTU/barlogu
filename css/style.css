@@ -15,8 +15,8 @@
     top: 0;
     display: none;
     background-color: black;
-    opacity: 0.8;
-    z-index: 5;
+    opacity: 0.5;
+    z-index: 2;
 }
 
 /* Standings Styling */
@@ -85,6 +85,14 @@ a{
     display: inline-block;
     vertical-align: middle;
     float: none;
+}
+
+.pop-up{
+    position: absolute;
+    z-index: 4;
+    margin: 0 auto;
+    width: 70%;
+    display: block;
 }
 
 /* From GreenerC style */

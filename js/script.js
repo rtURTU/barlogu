@@ -27,11 +27,11 @@ function CodeforcesAPI( url ) {
     xhttp.send();
 }
 
-function loadDoc( url ) {
+function loadPage( url ) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if ( xhttp.readyState == 4 && xhttp.status == 200 ) {
-            screenNode.innerHTML = xhttp.responseText;
+            document.body.innerHTML += xhttp.responseText;
         }
     };
     xhttp.open( "GET" , url , false );

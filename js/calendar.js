@@ -1,5 +1,6 @@
 var ov;
 var previousId, previousYear, previousMonth;
+var popupDiv;
 function MakeCalendar( divId , year , month ){
     while( month >= 12 ){
         month -= 12;
@@ -14,7 +15,7 @@ function MakeCalendar( divId , year , month ){
     previousMonth = month;
     var context = document.getElementById( divId );
     var dayHash = [ 7 , 1 , 2 , 3 , 4 , 5 , 6 ];
-    var zile = [ "" , "Luni" , "Marti" , "Miercuri" , "Joi" , "vineri" , "Sambata" , "Dimineca" ];
+    var zile = [ "" , "Luni" , "Marti" , "Miercuri" , "Joi" , "Vineri" , "Sambata" , "Dimineca" ];
     var luni = [ "Ianuarie" , "Februarie" , "Martie" , "Aprilie" , "Mai" , "Iunie" , "Iulie" , "August" , "Septembrie" , "Octombrie" , "Noiembrie" , "Decembrie" ];
     var date = new Date( year , month );
     
@@ -33,6 +34,7 @@ function MakeCalendar( divId , year , month ){
     tempDivs.classList.add( "glyphicon-chevron-left" );
     tempDivs.classList.add( "text-center" );
     tempDivs.classList.add( "vertical-middle" );
+    tempDivs.classList.add( "go-last-month" );
     tempDivs.onclick = function(){MakeCalendar( previousId , previousYear , previousMonth - 1 ); }
     newTile.appendChild( tempDivs );
     
@@ -49,6 +51,7 @@ function MakeCalendar( divId , year , month ){
     tempDivs.classList.add( "glyphicon-chevron-right" );
     tempDivs.classList.add( "text-center" );
     tempDivs.classList.add( "vertical-middle" );
+    tempDivs.classList.add( "go-next-month" );
     tempDivs.onclick = function(){MakeCalendar( previousId , previousYear , previousMonth + 1 ); }
     newTile.appendChild( tempDivs );
     
@@ -83,6 +86,7 @@ function MakeCalendar( divId , year , month ){
         newTile.classList.add( "even-color" );
         newTile.classList.add( "calendar-tile" );
         newTile.classList.add( "text-center" );
+        newTile.classList.add( "active-calendar" );
         var tileText = document.createElement( "a" );
         tileText.innerHTML = firstDay.getDate();
         newTile.appendChild( tileText );
@@ -103,16 +107,36 @@ function MakeCalendar( divId , year , month ){
     context.appendChild( calendarHeader );
 }
 
+function loadDoc( url ) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if ( xhttp.readyState == 4 && xhttp.status == 200 ) {
+            screenNode.innerHTML = xhttp.responseText;
+        }
+    };
+    xhttp.open( "GET" , url , true );
+    xhttp.send();
+}
+
 function DisplayPopUp( year , month , day ){
-    ov = document.getElementById( "overlay" );
     console.log( year );
     console.log( month );
     console.log( day );
-    ov.style.display = "block";
+    document.getElementById( "overlay" ).style.display = "block";
+    loadPage( "requests/calendar.php" );
+    var fuckMyLife = document.getElementsByClassName( "active-calendar" );
+    for( var i = 0 ; i < fuckMyLife.length ; i++ ){
+        fuckMyLife[ i ].onclick = function(){ DisplayPopUp( year , month , this.getElementsByTagName( "a" )[ 0 ].innerHTML ); };
+    }
+    document.getElementsByClassName( "go-last-month" )[ 0 ].onclick = function(){MakeCalendar( previousId , previousYear , previousMonth - 1 ); }
+    document.getElementsByClassName( "go-next-month" )[ 0 ].onclick = function(){MakeCalendar( previousId , previousYear , previousMonth + 1 ); }
+    //popupDiv = document.getElementById( "calendar-date" , document.body );
+    
 }
 
 window.onclick = function( event ){
-    if( event.target == ov ){
-        ov.style.display = "none";
+    if( event.target == document.getElementById( "overlay" ) ){
+        document.getElementById( "overlay" ).style.display = "none";
+        document.body.removeChild( document.getElementById( "calendar-date" ) );
     }
 }
